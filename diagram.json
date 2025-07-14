@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -396.6, "left": -26, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": -50.2,
+      "left": 288,
+      "rotate": 90,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "btn1:2.l", "uno:GND.1", "black", [ "v-6.4", "h-178.8", "v67.2" ] ],
+    [ "btn1:1.r", "uno:3", "green", [ "v13.6", "h-82.4" ] ]
+  ],
+  "dependencies": {}
+}
